@@ -7,3 +7,5 @@ Slider functionality is built upon a framework from here https://github.com/john
 A lot of small bugs/issues were resolved by looking up Stack Overflow posts. Most of the changes from here were minor. 
 
 The heatmap motion is inspired from here https://www.youtube.com/watch?v=T81Fb1hrToA. We wanted to replicate the appeal of a ball travelling to the net and showcase all that in one view. It makes the visualization look more appealing and also shows just how prolific Ronaldo was at scoring goals. 
+
+
