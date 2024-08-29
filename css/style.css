@@ -1,0 +1,228 @@
+html,body {
+    background: linear-gradient(to bottom, #062a39, #627276, #062a39); /* Futuristic gradient background */
+    color: white;
+    font-family:monospace;
+    background-size:100%; /* Adjust the background size as needed */
+    background-position:400%; /* Adjust the background position as needed */
+    text-align: center;
+    transform: scale(0.90);
+    /* background-repeat: no-repeat;   */
+  }
+
+
+.ronaldo-image-container {
+  text-align: center;
+}
+
+.ronaldo-image {
+  max-width: 100%;
+  height: 50px;
+}
+
+ 
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw; /* Ensures it doesn't overflow the viewport width */
+
+
+  }
+
+  .heatmapAndGoal {
+    display: flex;           /* Enables flexbox */
+    justify-content:space-evenly; /* Space out the children evenly */
+    align-items: stretch;    /* Stretch items to fill the container vertically */
+    min-width: 100%;
+    flex-wrap: wrap;
+  }
+
+
+
+#heatmap, #goal, #worldmap, #timelineAll{
+  flex: 1; /* Each child takes up an equal amount of space */
+}
+
+#worldmap {
+  margin-right: 50px;
+  border: 1px solid white;
+}
+
+#timelineAll, #goal {
+  border: none;
+}
+
+#goal {
+  padding-top: 130px;
+}
+
+  
+/* Custom Tooltip for WorldMap */
+.custom-tooltip {
+  position: absolute;
+  visibility: hidden; /* Hidden by default */
+  background-color: #222; /* Dark background for contrast */
+  color: #fff; /* White text */
+  border: 1px solid #555; /* Slightly lighter border */
+  /* padding: 10px; */
+  border-radius: 4px;
+  font-family: monospace; /* Consistent with body font */
+  font-size: 9px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Soft shadow for depth */
+  z-index: 10; /* Ensure it's above other content */
+  pointer-events: none; /* Prevents tooltip from blocking cursor */
+
+}
+
+/* Optional: Tooltip Arrow */
+.custom-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  /* margin-left: -5px;
+  border-width: 5px; */
+  border-style: solid;
+  border-color: transparent transparent #222 transparent;
+
+}
+
+/* Adjusting when the tooltip becomes visible */
+.custom-tooltip.visible {
+  visibility: visible;
+
+}
+
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin-top: 150px;
+  }
+
+  #timeline {
+    margin-top: 50px;
+  }
+  
+  #slider {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+:focus {
+    outline: none;
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #value {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .slider-svg {
+    width: 500px;
+    height: 100px;
+  }
+  
+  .axis text {
+    fill: white;
+  }
+  
+  .track {
+    stroke: #062835;
+    stroke-width: 30;
+    stroke-linecap: butt;
+  }
+  
+  .track-inset {
+    stroke:#062835;
+    stroke-linecap: butt;
+  }
+
+  .track-fill {
+    stroke-width: 30;
+    stroke:rgb(209, 209, 209);
+  }
+  
+  .handle {
+    stroke:black;
+    fill: lightgray;
+    d: path('M -10,-15 A 5,5 0 0,0 -15,-10 L -15,10 A 5,5 0 0,0 -10,15 L 10,15 A 5,5 0 0,0 15,10 L 15,-10 A 5,5 0 0,0 10,-15 Z M -2,-15 L -2,15 M 2,-15 L 2,15');
+  }
+
+  .handle::active {
+stroke: none;
+  }
+
+  .parameter-value .track {
+    stroke-width: 40;
+    stroke-linecap: butt;
+}
+
+.parameter-value .track-inset {
+    stroke-width: 2;
+    stroke-linecap: butt;
+}
+
+  
+  .parameter-value text {
+    font-size: 11px;
+    fill:rgb(255, 164, 164);
+  }
+  
+  button {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#goal {
+  max-width: 100vw; /* Ensures it doesn't overflow the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  /* Add additional responsive design techniques as needed */
+}
+
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px;
+  min-width: 550px;
+  max-width: 550px;
+  color: #333;
+}
+
+.tooltip-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#tooltip ul {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>G09 Project</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+    <div id="box">
+        <div id="loadingSpinner">
+            <div class="spinner">
+                <div class="soccer-ball"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-container">
+        <div class="ronaldo-image-container">
+            <img srcset="data/cr7.svg" alt="Cristiano Ronaldo" class="ronaldo-image">
+        </div>
+        <div class="title">
+            <h1><i>Time-Stamped Greatness: Cristiano Ronaldo's Goal-Infused Career</i></h1>
+        </div>
+        <div id="worldmapTooltip" class="custom-tooltip"></div>
+        <div id="tooltip"></div>
+            <div class="heatmapAndGoal">
+                <div>
+                    <div id="worldmap"></div>
+                    <p>Countries played</p>
+                </div>
+                <div>
+                    <div id="heatmap"></div>
+                    <p>Goals Heatmap</p>
+                </div>
+                <div>
+                    <div id="goal"></div>
+                    <p>Goal Scored position</p>
+                </div>
+            </div>
+            <div class="heatmapAndGoal">
+                <div id="timelineAll">
+                    <div id="timeline"></div>
+                    <div id="slider" class="slider"></div>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+
+    <!-- Our JS code -->
+    <script src="js/main.js"></script>
+    <script src="js/worldmap.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/goal.js"></script>
+    <script src="js/timeline.js"></script>
+
+</body>
+</html>
