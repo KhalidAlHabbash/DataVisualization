@@ -1,4 +1,4 @@
-# Soccer Data Visualization Project
+# Soccer Data Visualization Project ⚽
 
 This project visualizes soccer player performance metrics using **D3.js**, **JavaScript**, **HTML**, and **CSS**. It features interactive components such as timelines, heatmaps, and goal visualizations to offer an insightful look into player data.
 
